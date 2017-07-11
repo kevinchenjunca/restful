@@ -15,7 +15,6 @@ exports.access = function(req,res) {
 exports.signin = function(req,res,next) {
   //user has already had their email and password  auth'd
   //we just need to give them a token
-  console.log("received ajax call");
   res.send({token: tokenForUser(req.user)});
 }
 

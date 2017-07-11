@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
-const morgan = require('morgan');
+//const morgan = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
@@ -18,7 +18,7 @@ mongoose.connect('mongodb://colonial:Wanbo12#@cluster0-shard-00-00-n16iz.mongodb
 
 
 //App Setup
-app.use(morgan('combined'));
+//app.use(morgan('combined'));
 app.use(cors());
 app.use(bodyParser.json({type: '*/*'}));
 
