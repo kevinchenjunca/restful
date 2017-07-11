@@ -14,8 +14,7 @@ const auth = require('./services/authentication');
 
 
 //DB Setup
-mongoose.connect('mongodb://colonial:Wanbo12#@cluster0-shard-00-00-n16iz.mongodb.net:27017,cluster0-shard-00-01-n16iz.mongodb.net:27017,cluster0-shard-00-02-n16iz.mongodb.net:27017/auth?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin');
-
+mongoose.connect('mongodb://localhost:user/user');
 
 //App Setup
 //app.use(morgan('combined'));
